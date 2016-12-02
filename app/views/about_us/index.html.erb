@@ -18,9 +18,6 @@
         <td><%= about_u.name %></td>
         <td><%= about_u.description %></td>
         <td><%= about_u.image %></td>
-        <td><%= link_to 'Show', about_u %></td>
-        <td><%= link_to 'Edit', edit_about_u_path(about_u) %></td>
-        <td><%= link_to 'Destroy', about_u, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +25,4 @@
 
 <br>
 
-<%= link_to 'New About U', new_about_u_path %>
+<div class="Back"><%= link_to "Retour", '/'%></div>

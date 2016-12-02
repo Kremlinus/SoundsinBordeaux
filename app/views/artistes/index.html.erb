@@ -18,9 +18,6 @@
         <td><%= artiste.name %></td>
         <td><%= artiste.description %></td>
         <td><%= artiste.image %></td>
-        <td><%= link_to 'Show', artiste %></td>
-        <td><%= link_to 'Edit', edit_artiste_path(artiste) %></td>
-        <td><%= link_to 'Destroy', artiste, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +25,4 @@
 
 <br>
 
-<%= link_to 'New Artiste', new_artiste_path %>
+<div class="Back"><%= link_to "Retour", '/'%></div>
