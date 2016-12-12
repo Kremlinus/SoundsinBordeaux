@@ -1,7 +1,24 @@
+
 <p id="notice"><%= notice %></p>
 
-<h1>Events</h1>
 
+<div class="wrapper">
+<header class="sidenav">
+  <%= link_to '/' do %>
+    <%= image_tag 'logo_dark.png' %>
+  <% end %>
+    
+  <div class="link">
+      <%= link_to "CETTE SEMAINE", '/about_us'%> <br>
+      <%= link_to "EVENEMENT", '/events'%> <br>
+      <%= link_to "ARTISTES", '/artistes'%> <br>
+      <%= link_to "A PROPOS", '/about_us'%> <br>
+  </div>
+ </header>
+
+<div class="Body">
+
+<!--
 <table>
   <thead>
     <tr>
@@ -24,5 +41,3 @@
 </table>
 
 <br>
-
-<div class="Back"><%= link_to "Retour", '/'%></div>

@@ -1,0 +1,97 @@
+/*/ Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/ */
+
+html, body {
+margin: 0 auto;
+width: 100%;
+height: 100%;
+display: flex;
+font-family: 'Raleway', sans-serif;
+
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: #FEFEFE;
+  display: flex;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+
+/* 1. Side Nav Home 
+__________________________________________________*/
+
+
+.About {
+  margin-top: 40%;
+}
+
+.catchphrase {
+  margin-top: 20%;
+}
+
+img {
+  height:100px;
+  margin-top: 100%;
+}
+
+header {
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  text-align: center;
+  color:black;
+}
+
+/* 2. HOME 
+___________________________________________________*/
+
+.home {
+  height:100%;
+  width:100%;
+}
+
+.home p {
+  color:white;
+  padding-left:50px;
+  font-weight:lighter;
+  font-size:30px;
+}
+
+.lignes {
+  height:calc(100%/3);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.BOTW {
+  background: url(steve.jpg) center  no-repeat;
+  background-size: cover;
+}
+
+.BOTW:hover {
+  opacity: 0.5;
+}
+.Artistes {
+  background: url(zadig.jpg) center  no-repeat;
+  background-size: cover;
+}
+.Artistes:hover{
+  opacity: 0.5;
+}
+.Events {
+  background: url(climax.jpg) center  no-repeat;
+  background-size: cover;
+}
+.Events:hover{
+  opacity: 0.5;
+}
+

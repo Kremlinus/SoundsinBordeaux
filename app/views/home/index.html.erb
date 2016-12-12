@@ -1,11 +1,29 @@
-<div class="About">
-  <%= link_to "About", '/about_us'%>
-</div>
+<div class="wrapper">
+<header class="sidenav">
+	<%= image_tag 'logo_dark.png' %>
+	 <p class=catchphrase> Retrouvez toutes les <br> sorties, concerts et
+	 <br> festivals  de  musique  <br> electro à Bordeaux </p>  
+	<div class="About">
+  		<%= link_to "ABOUT US", '/about_us'%>
+	</div>
+ </header>
+	
+	<div class="home">
 
-<div class="Artistes">
-  <%= link_to "Artistes", '/artistes'%>
-</div>
+		<div class="BOTW , lignes" >
+		<p> LE MEILLEUR DE <br> LA SEMAINE </p>
+		</div>
 
-<div class="Events">
-  <%= link_to "Events", '/events'%>
+		<%= link_to  '/artistes' do %>
+			<div class="Artistes , lignes"> 
+				<p> ARTISTES </p> 
+			</div>
+		<% end %>	 	
+
+		<%= link_to  '/events' do %>
+			<div class="Events , lignes"> 
+				<p> EVENEMENTS </p> 
+			</div>
+		<% end %> 	 
+	</div>
 </div>

@@ -1,7 +1,33 @@
+
 <p id="notice"><%= notice %></p>
 
-<h1>About Us</h1>
 
+<div class="wrapper">
+<header class="sidenav">
+  <%= link_to  '/' do %>
+    <%= image_tag 'logo_dark.png' %>
+  <% end %>
+    
+  <div class="link">
+      <%= link_to "CETTE SEMAINE", '/about_us'%> <br>
+      <%= link_to "EVENEMENT", '/events'%> <br>
+      <%= link_to "ARTISTES", '/artistes'%> <br>
+      <%= link_to "A PROPOS", '/about_us'%> <br>
+  </div>
+ </header>
+
+
+  <div class="Body">
+
+<h1> SOUNDS IN BORDEAUX </h1>
+
+<p> Retrouvez toutes les  sorties, concerts et festivals de musique electro à Bordeaux </p>  
+
+
+
+
+
+<!--
 <table>
   <thead>
     <tr>
@@ -18,11 +44,8 @@
         <td><%= about_u.name %></td>
         <td><%= about_u.description %></td>
         <td><%= about_u.image %></td>
-      </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<div class="Back"><%= link_to "Retour", '/'%></div>
