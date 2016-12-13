@@ -24,7 +24,7 @@ a {
 }
 
 
-/* 1. Side Nav Home 
+/* 1. Side Nav Home
 __________________________________________________*/
 
 
@@ -49,7 +49,7 @@ header {
   color:black;
 }
 
-/* 2. HOME 
+/* 2. HOME
 ___________________________________________________*/
 
 .home {
@@ -73,7 +73,7 @@ ___________________________________________________*/
 
 }
 .BOTW {
-  background: url(steve.jpg) center  no-repeat;
+  background: url(../images/steve.jpg) center  no-repeat;
   background-size: cover;
 }
 
@@ -81,17 +81,16 @@ ___________________________________________________*/
   opacity: 0.5;
 }
 .Artistes {
-  background: url(zadig.jpg) center  no-repeat;
+  background: url(../images/zadig.jpg) center  no-repeat;
   background-size: cover;
 }
 .Artistes:hover{
   opacity: 0.5;
 }
 .Events {
-  background: url(climax.jpg) center  no-repeat;
+  background: url(../images/climax.jpg) center  no-repeat;
   background-size: cover;
 }
 .Events:hover{
   opacity: 0.5;
 }
-
