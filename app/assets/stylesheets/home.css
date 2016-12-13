@@ -73,7 +73,7 @@ ___________________________________________________*/
 
 }
 .BOTW {
-  background: url(../images/steve.jpg) center  no-repeat;
+  background: url(steve.jpg) center  no-repeat;
   background-size: cover;
 }
 
@@ -81,14 +81,14 @@ ___________________________________________________*/
   opacity: 0.5;
 }
 .Artistes {
-  background: url(../images/zadig.jpg) center  no-repeat;
+  background: url(zadig.jpg) center  no-repeat;
   background-size: cover;
 }
 .Artistes:hover{
   opacity: 0.5;
 }
 .Events {
-  background: url(../images/climax.jpg) center  no-repeat;
+  background: url(climax.jpg) center  no-repeat;
   background-size: cover;
 }
 .Events:hover{
