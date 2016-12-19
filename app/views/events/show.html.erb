@@ -1,19 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
+    <%= @event.name %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+    <%= @event.description %>
 
-<p>
-  <strong>Image:</strong>
-  <%= @event.image %>
-</p>
+    <%= @event.image %>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%= link_to 'Back', artistes_path %>
+
+</div>

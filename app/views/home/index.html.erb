@@ -1,29 +1,42 @@
-<div class="wrapper">
-<header class="sidenav">
-	<%= image_tag 'logo_dark.png' %>
-	 <p class=catchphrase> Retrouvez toutes les <br> sorties, concerts et
-	 <br> festivals  de  musique  <br> electro à Bordeaux </p>  
-	<div class="About">
-  		<%= link_to "ABOUT US", '/about_us'%>
+<div class="sidenav">
+	<div class="hole"></div>
+	<div class="logo">
+		<%= image_tag 'logo_dark.png' %>
 	</div>
- </header>
-	
-	<div class="home">
+
+	<div class="link">
+		<h2 class=catchphrase> Retrouvez toutes les sorties, concerts et festivals de musique electro à Bordeaux.</h2>
+		<h2><%= link_to "Pour en savoir plus, par ici -->", '/about_us'%></h2>
+	</div>
+
+	<div class="about">
+      <p>CONTACT</p>
+      <div class="social_icons">
+        <a href="https://www.facebook.com/SoundsInBordeaux/?fref=ts">	<%= image_tag 'fb.svg' %></a>
+        <a href="https://twitter.com/SoundsBordeaux">	<%= image_tag 'twitter.svg' %></a>
+        <a href="https://www.instagram.com/soundsinbordeaux/">	<%= image_tag 'instagram.svg' %></a>
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container">
 
 		<div class="BOTW , lignes" >
-		<p> LE MEILLEUR DE <br> LA SEMAINE </p>
+		<h1> LE MEILLEUR DE <br>LA SEMAINE</h1>
 		</div>
 
 		<%= link_to  '/artistes' do %>
-			<div class="Artistes , lignes"> 
-				<p> ARTISTES </p> 
+			<div class="artists , lignes">
+				<h1> ARTISTES </h1>
 			</div>
-		<% end %>	 	
+		<% end %>
 
 		<%= link_to  '/events' do %>
-			<div class="Events , lignes"> 
-				<p> EVENEMENTS </p> 
+			<div class="events , lignes">
+				<h1> événements </h1>
 			</div>
-		<% end %> 	 
-	</div>
+		<% end %>
+
 </div>

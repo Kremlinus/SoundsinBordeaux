@@ -1,19 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @artiste.name %>
-</p>
+    <%= @artiste.name %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @artiste.description %>
-</p>
+    <%= @artiste.description %>
 
-<p>
-  <strong>Image:</strong>
-  <%= @artiste.image %>
-</p>
+    <%= @artiste.image %>
 
-<%= link_to 'Edit', edit_artiste_path(@artiste) %> |
-<%= link_to 'Back', artistes_path %>
+  <%= link_to 'Back', artistes_path %>
+  
+</div>

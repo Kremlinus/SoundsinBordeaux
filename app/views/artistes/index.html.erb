@@ -1,47 +1,35 @@
-
-<p id="notice"><%= notice %></p>
-
-
-<div class="wrapper">
-<header class="sidenav">
+<div class="sidenav">
+  <div class="hole"></div>
+  <div class="logo">
   <%= link_to  '/' do %>
     <%= image_tag 'logo_dark.png' %>
   <% end %>
-    
-  <div class="link">
-      <%= link_to "CETTE SEMAINE", '/about_us'%> <br>
-      <%= link_to "EVENEMENT", '/events'%> <br>
-      <%= link_to "ARTISTES", '/artistes'%> <br>
-      <%= link_to "A PROPOS", '/about_us'%> <br>
   </div>
- </header>
+  <div class="link">
+      <ul>
+        <li><%= link_to "CETTE SEMAINE", '/about_us'%></li>
+        <li><%= link_to "événements", '/events'%></li>
+        <li style="text-decoration:overline"><strong><%= link_to "ARTISTES", '/artistes'%></strong></li>
+        <li><%= link_to "A PROPOS", '/about_us'%></li>
+      </ul>
 
-<div class="Body">
+  </div>
+  <div class="about">
+      <p>CONTACT</p>
+      <div class="social_icons">
+        <a href="https://www.facebook.com/SoundsInBordeaux/?fref=ts">	<%= image_tag 'fb.svg' %></a>
+        <a href="https://twitter.com/SoundsBordeaux">	<%= image_tag 'twitter.svg' %></a>
+        <a href="https://www.instagram.com/soundsinbordeaux/">	<%= image_tag 'instagram.svg' %></a>
+      </div>
+  </div>
 
-<!--
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image</th>
-      <th> See more </th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+</div>
+<div class="grid">
+  <div class="grid-item">
     <% @artistes.each do |artiste| %>
-      <tr>
-        <td><%= artiste.name %></td>
-        <td><%= artiste.description %></td>
-        <td><%= artiste.image %></td>
-        <td><%= link_to 'Details', artiste_path(artiste) %></td>
-      </tr>
-
-
+        <%= artiste.name %>
+        <%= artiste.image %>
+        <%= link_to 'Détails', artiste_path(artiste) %>
+  </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
+</div>

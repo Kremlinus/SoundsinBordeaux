@@ -1,51 +1,40 @@
-
-<p id="notice"><%= notice %></p>
-
-
-<div class="wrapper">
-<header class="sidenav">
+<div class="sidenav">
+  <div class="hole"></div>
+  <div class="logo">
   <%= link_to  '/' do %>
     <%= image_tag 'logo_dark.png' %>
   <% end %>
-    
-  <div class="link">
-      <%= link_to "CETTE SEMAINE", '/about_us'%> <br>
-      <%= link_to "EVENEMENT", '/events'%> <br>
-      <%= link_to "ARTISTES", '/artistes'%> <br>
-      <%= link_to "A PROPOS", '/about_us'%> <br>
   </div>
- </header>
+  <div class="link">
+      <ul>
+        <li><%= link_to "CETTE SEMAINE", '/about_us'%></li>
+        <li><%= link_to "événements", '/events'%></li>
+        <li><%= link_to "ARTISTES", '/artistes'%></li>
+        <li style="text-decoration:overline"><strong><%= link_to "A PROPOS", '/about_us'%></strong></li>
+      </ul>
+  </div>
+  <div class="about">
+      <p>CONTACT</p>
+      <div class="social_icons">
+        <a href="https://www.facebook.com/SoundsInBordeaux/?fref=ts">	<%= image_tag 'fb.svg' %></a>
+        <a href="https://twitter.com/SoundsBordeaux">	<%= image_tag 'twitter.svg' %></a>
+        <a href="https://www.instagram.com/soundsinbordeaux/">	<%= image_tag 'instagram.svg' %></a>
+      </div>
+  </div>
 
-
-  <div class="Body">
+</div>
+<div class="container">
 
 <h1> SOUNDS IN BORDEAUX </h1>
 
-<p> Retrouvez toutes les  sorties, concerts et festivals de musique electro à Bordeaux </p>  
-
-
-
-
-
-<!--
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @about_us.each do |about_u| %>
-      <tr>
-        <td><%= about_u.name %></td>
-        <td><%= about_u.description %></td>
-        <td><%= about_u.image %></td>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+  <p> Retrouvez toutes les  sorties, concerts et festivals de musique electro à Bordeaux </p>
+<div class="grid">
+  <% @about_us.each do |about_u| %>
+    <div class="grid-item">
+      <%= about_u.name %>
+      <%= about_u.description %>
+      <%= about_u.image %>
+    </div>
+  <% end %>
+</div>
+</div>
